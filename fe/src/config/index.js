@@ -27,6 +27,6 @@ const EnvConfig = {
 export default {
     env,
     mock: true,
-    // namespace: 'manager',
+    namespace: 'manager',
     ...EnvConfig[env]//解构出来api地址
 }
