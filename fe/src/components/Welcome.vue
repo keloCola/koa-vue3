@@ -1,15 +1,15 @@
 <template>
-  <div>
-    <h1>welcome</h1>
-  </div>
+  <h1>這是歡迎頁</h1>
+  <button @click="goLogin">去登錄</button>
 </template>
 
-<script>
-export default {
-
+<script setup>
+import { useRouter } from 'vue-router'
+const router = useRouter()
+const goLogin = () => {
+  router.push('/login')
 }
 </script>
 
 <style>
-
 </style>
